@@ -1,4 +1,7 @@
 # Develop REST API with Echo framework
+* Create API
+* [Grachful shutdown](https://echo.labstack.com/docs/cookbook/graceful-shutdown)
+* API testing with postman and newman
 
 ## Step to run
 ```
