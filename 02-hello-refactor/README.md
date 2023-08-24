@@ -42,4 +42,4 @@ Run test
 $go test ./... -cover -v
 ```
 
-Next => Step 3 :: XXX
+Next => Step 3 :: Working with database
