@@ -11,3 +11,8 @@
 2. Refactor and testing
 3. Working with dependencies
    * Database
+   * Repository
+   * Service
+4. Working with PostgreSQL
+   * Use [pqx package](https://github.com/jackc/pgx)
+   * Docker
