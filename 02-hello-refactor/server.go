@@ -20,9 +20,7 @@ func (hello *HelloAPI) Start(port string) {
 
 	// Handler
 	hello.e.GET("/hello", SayHi)
-	hello.e.Logger.Fatal(hello.e.Start(port))
-}
 
-func (hello *HelloAPI) Close() {
-	hello.e.Close()
+	// Start server
+	hello.e.Logger.Fatal(hello.e.Start(port))
 }
