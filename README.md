@@ -9,3 +9,5 @@
 ## List of workshop
 1. Hello REST API with Echo
 2. Refactor and testing
+3. Working with dependencies
+   * Database
