@@ -61,7 +61,8 @@ Testing ...
 ## Run with docker
 Start database
 ```
-$docker compose up -d
+$docker compose build
+$docker compose up -d db
 $docker compose ps
 
 NAME                       IMAGE               COMMAND                  SERVICE             CREATED              STATUS              PORTS
@@ -82,6 +83,12 @@ ____________________________________O/_______
                                     O\
 ⇨ http server started on [::]:1323
 ```
+or Start with Docker compose
+```
+$docker compose build
+$docker compose up -d api
+```
+
 
 Testing with postman ...
 ```
