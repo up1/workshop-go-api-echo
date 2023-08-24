@@ -39,8 +39,12 @@ func SayHi(m Message) echo.HandlerFunc {
 
 Testing ...
 
-### Solution 3 :: XXX
+### Solution 3 :: Create new struct or interface to manage dependencies
+* Database
+* Repository
+* Service
 ```
+try by yourself
 ```
 
 Testing ...
