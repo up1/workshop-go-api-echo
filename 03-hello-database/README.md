@@ -18,7 +18,23 @@ func SayHi(c echo.Context) (err error) {
 * Update handler.go
 * Update handler_test.go
 
+server.go
 ```
+// Database
+message := Message{Data: "Hello world"}
+
+// Handler
+hello.e.GET("/hello", SayHi(message))
+```
+
+handler.go
+```
+func SayHi(m Message) echo.HandlerFunc {
+	return func(c echo.Context) (err error) {
+		res := HelloResponse{Message: m.Data}
+		return c.JSON(http.StatusOK, res)
+	}
+}
 ```
 
 Testing ...
