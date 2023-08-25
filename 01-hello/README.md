@@ -37,6 +37,9 @@ $newman run go-api.postman_collection.json
 ## Performance testing
 * [wrk](https://github.com/wg/wrk)
 * [go-wrk](https://github.com/tsliwowicz/go-wrk)
+* [vegeta](https://github.com/tsenart/vegeta)
+* [Apache JMeter](https://jmeter.apache.org/)
+* [K6](https://k6.io/)
 ```
 $wrk -t 5 -c 100 -d 10s http://localhost:1323/hello
 ```
