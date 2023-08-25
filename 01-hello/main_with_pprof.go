@@ -5,6 +5,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+
+	_ "net/http/pprof"
 )
 
 type HelloResponse struct {
@@ -21,5 +23,8 @@ func main() {
 		res := HelloResponse{Message: "Hello world"}
 		return c.JSON(http.StatusOK, res)
 	})
+
+	e.GET("/debug/*", echo.WrapHandler(http.DefaultServeMux))
+
 	e.Logger.Fatal(e.Start(":1323"))
 }
